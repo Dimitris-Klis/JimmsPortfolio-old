@@ -24,7 +24,7 @@ games.innerHTML = `
 async function readTxt(name) {
     try {
         // Use a relative path from the root (JimmsPortfolio-main)
-        const baseUrl = location.hostname === "localhost" ? './content/GamePreviews/' : '/JimmsPortfolio/content/GamePreviews/';
+        const baseUrl = location.hostname === "localhost" ? './content/GamePreviews/' : '/JimmsPortfolio-old/content/GamePreviews/';
 
         const response = await fetch(`${baseUrl}${txtShortcut}${name}.txt`);
 
